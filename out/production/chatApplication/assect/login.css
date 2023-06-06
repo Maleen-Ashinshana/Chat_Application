@@ -1,0 +1,20 @@
+/*.anchorPane .anchorPane {
+    !*background-color: black;*!
+    -fx-background-color: blue;
+    -fx-background-radius: 50 50 50 50;
+}
+.label{
+    -fx-background-color: black;
+}*/
+/*.anchorPane .anchorPane{
+    -fx-background-color: blue;
+    !*background: blue;*!
+}*/
+/*#mainPane{
+    -fx-background-image: "src/assect/img";
+    !*-fx-border-color: white 10%;*!
+
+    !*-fx-fill: 100%;*!
+
+
+}*/

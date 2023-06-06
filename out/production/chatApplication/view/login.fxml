@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="mainPane" prefHeight="505.0" prefWidth="462.0" style="-fx-background-image: src/assect/img/23964.jpg;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <ImageView fitHeight="506.0" fitWidth="462.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assect/img/23964.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
