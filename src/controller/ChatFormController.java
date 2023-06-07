@@ -45,7 +45,7 @@ public class ChatFormController {
             hBox.setPadding(new Insets(5,10,5,10));
             Text text = new Text(messageToSend);
             TextFlow textFlow = new TextFlow(text);
-            textFlow.setStyle("-fx-background-color: #7E308E;"+"-fx-background-radius: 10px");
+            textFlow.setStyle("-fx-background-color:  #8692f7;"+"-fx-background-radius: 10px");
             textFlow.setPadding(new Insets(5,10,5,10));
             text.setFill(Color.color(1,1,1));
             hBox.getChildren().add(textFlow);
@@ -63,7 +63,7 @@ public class ChatFormController {
 
         Text text = new Text(messageFromServer);
         TextFlow textFlow = new TextFlow(text);
-        textFlow.setStyle("-fx-background-color: rgb(198,194,194);"+"-fx-background-radius: 10px");
+        textFlow.setStyle("-fx-background-color:  rgb(198,194,194);"+"-fx-background-radius: 10px");
         textFlow.setPadding(new Insets(5,10,5,10));
         hBox.getChildren().add(textFlow);
 
@@ -77,7 +77,7 @@ public class ChatFormController {
     public static void  addImage(File file, VBox vBox, String name){
         HBox hBox = new HBox();
         VBox vBox1 = new VBox();
-        vBox1.setStyle("-fx-background-color: red /*rgb(198,194,194)*/;"+"-fx-background-radius: 5px");
+        vBox1.setStyle("-fx-background-color:  rgb(198,194,194);"+"-fx-background-radius: 5px");
         hBox.setAlignment(Pos.CENTER_LEFT);
         hBox.setPadding(new Insets(5,10,5,10));
         Text text = new Text(name);
