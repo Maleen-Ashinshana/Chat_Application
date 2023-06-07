@@ -13,7 +13,8 @@ public class Server {
         this.serverSocket = serverSocket;
     }
 
-    public void startServer() {
+
+    public void startServer(){
         try {
             while (!serverSocket.isClosed()) {
                 Socket socket = serverSocket.accept();
@@ -30,6 +31,12 @@ public class Server {
             e.printStackTrace();
         }
     }
+    /*Start the Server*/
+    public static void main(String[] args) throws IOException {
+        ServerSocket serverSocket = new ServerSocket(5000);
+        Server server  = new Server(serverSocket);
+        server.startServer();
+    }
 
     public void CloseServerSocket() {
         try {
@@ -40,11 +47,17 @@ public class Server {
             e.printStackTrace();
         }
     }
-
-    public static void main(String[] args) throws IOException {
-
-        ServerSocket serverSocket = new ServerSocket(5000);
-        Server server  = new Server(serverSocket);
-        server.startServer();
-    }
+  /*public void initialize(){
+      new Thread(()->{
+          try {
+              ServerSocket serverSocket = new ServerSocket(5000);
+              Socket socket = serverSocket.accept();
+              System.out.println("client connected ");
+              InputStreamReader inputStreamReader = new InputStreamReader(socket.getInputStream());
+              BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+          } catch (IOException e) {
+              throw new RuntimeException(e);
+          }
+      }).start();
+  }*/
 }
